@@ -42,6 +42,7 @@ namespace gr {
         Build_Frame_impl(const char *sentence, bool repeat, bool enable_NRZI);
         ~Build_Frame_impl();
 
+    void set_sentence(const char *sentence);
     void dump_buffer(const char *b, int buffer_size);
     char * int2bin(int a, char *buffer, int buf_size);      
     int stuff (const char *in, char *out, int l_in);

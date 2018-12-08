@@ -171,6 +171,33 @@
     </param>
   </block>
   <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(608, 4)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>sentence</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>"010010000011101011110111001110011000100000000000000000100000001011001000001011000101000110100010010100001101011001111011000011111111111011100101110011100000000000000110"</value>
+    </param>
+  </block>
+  <block>
     <key>aistx_Build_Frame</key>
     <param>
       <key>alias</key>
@@ -218,7 +245,7 @@
     </param>
     <param>
       <key>sentence</key>
-      <value>010010000011101011110111001110011000100000000000000000100000001011001000001011000101000110100010010100001101011001111011000011111111111011100101110011100000000000000110</value>
+      <value>sentence</value>
     </param>
   </block>
   <block>
@@ -367,7 +394,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(953, 164)</value>
+      <value>(1008, 200)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1903,7 +1930,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(932, 305)</value>
+      <value>(1056, 308)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2052,6 +2079,41 @@
     <param>
       <key>otw</key>
       <value></value>
+    </param>
+  </block>
+  <block>
+    <key>xmlrpc_server</key>
+    <param>
+      <key>addr</key>
+      <value>0.0.0.0</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(488, 4)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>xmlrpc_server_0</value>
+    </param>
+    <param>
+      <key>port</key>
+      <value>10001</value>
     </param>
   </block>
   <connection>

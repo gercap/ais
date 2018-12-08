@@ -5,6 +5,7 @@
   <category>aistx</category>
   <import>import aistx</import>
   <make>aistx.Build_Frame($sentence, $repeat, $enable_NRZI)</make>
+  <callback>set_sentence($sentence)</callback>
     <param>
     <name>Sentence</name>
     <key>sentence</key>
