@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_0394f96c439d47acaf61ef0360aaa540" kind="dir">
+    <compoundname>aistx</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="Build__Frame_8h">Build_Frame.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/germanocapela/src/ais/gr-aistx/include/aistx/"/>
+  </compounddef>
+</doxygen>

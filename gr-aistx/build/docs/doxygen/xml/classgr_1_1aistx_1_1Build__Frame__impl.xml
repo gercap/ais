@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classgr_1_1aistx_1_1Build__Frame__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::aistx::Build_Frame_impl</compoundname>
+    <basecompoundref refid="classgr_1_1aistx_1_1Build__Frame" prot="public" virt="non-virtual">gr::aistx::Build_Frame</basecompoundref>
+    <includes refid="Build__Frame__impl_8h" local="no">Build_Frame_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1aistx_1_1Build__Frame__impl_1afd6d3c9845d01e8fbd5600a150e0cde1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::aistx::Build_Frame_impl::d_repeat</definition>
+        <argsstring></argsstring>
+        <name>d_repeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="34" column="1" bodyfile="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1aistx_1_1Build__Frame__impl_1a659fa63b024f19504015514d34d26f0e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::aistx::Build_Frame_impl::d_enable_NRZI</definition>
+        <argsstring></argsstring>
+        <name>d_enable_NRZI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="35" column="1" bodyfile="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1aistx_1_1Build__Frame__impl_1af7c943d1af8acecaaea2526962a6d976" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* gr::aistx::Build_Frame_impl::payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="37" column="1" bodyfile="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1aistx_1_1Build__Frame__impl_1a2cdfc9cd7a373d8dcbd1528c6564e199" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::aistx::Build_Frame_impl::LEN_SENTENCE</definition>
+        <argsstring></argsstring>
+        <name>LEN_SENTENCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="38" column="1" bodyfile="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1aistx_1_1Build__Frame__impl_1a119c01ddf5ab7493667b8e4684388725" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::aistx::Build_Frame_impl::LEN_PAYLOAD</definition>
+        <argsstring></argsstring>
+        <name>LEN_PAYLOAD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="39" column="1" bodyfile="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1ad10991eaf9af93213811ec9a204e4dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::aistx::Build_Frame_impl::Build_Frame_impl</definition>
+        <argsstring>(const char *sentence, bool repeat, bool enable_NRZI)</argsstring>
+        <name>Build_Frame_impl</name>
+        <param>
+          <type>const char *</type>
+          <declname>sentence</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable_NRZI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1af2af7ecdd2cf9a761f1f6cf6bfb3c237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::aistx::Build_Frame_impl::~Build_Frame_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~Build_Frame_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1a6460e0ac01209f539719dc8ac23d7b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::aistx::Build_Frame_impl::dump_buffer</definition>
+        <argsstring>(const char *b, int buffer_size)</argsstring>
+        <name>dump_buffer</name>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1a03d7206b7c8a8cb7392c0b3919ba11c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* gr::aistx::Build_Frame_impl::int2bin</definition>
+        <argsstring>(int a, char *buffer, int buf_size)</argsstring>
+        <name>int2bin</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1ae3b8521f2b147735d4ad476a41197576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::aistx::Build_Frame_impl::stuff</definition>
+        <argsstring>(const char *in, char *out, int l_in)</argsstring>
+        <name>stuff</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1a9f1fb49069f3564e4e48cbfbf59e6b1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::aistx::Build_Frame_impl::pack</definition>
+        <argsstring>(int orig_ascii, char *ret, int bits_per_byte)</argsstring>
+        <name>pack</name>
+        <param>
+          <type>int</type>
+          <declname>orig_ascii</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ret</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits_per_byte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1aee6cd487dd7d5160d761e8de101072a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::aistx::Build_Frame_impl::nrz_to_nrzi</definition>
+        <argsstring>(char *data, int length)</argsstring>
+        <name>nrz_to_nrzi</name>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1a7cb5a908822c0a7298cc86ca738d2688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::aistx::Build_Frame_impl::reverse_bit_order</definition>
+        <argsstring>(char *data, int length)</argsstring>
+        <name>reverse_bit_order</name>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1aa73a960771508f41940a494df2a15fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long gr::aistx::Build_Frame_impl::unpack</definition>
+        <argsstring>(char *buffer, int start, int length)</argsstring>
+        <name>unpack</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1a08e748e33e762958ec4c85483efbd4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::aistx::Build_Frame_impl::compute_crc</definition>
+        <argsstring>(char *buffer, char *ret, unsigned int len)</argsstring>
+        <name>compute_crc</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ret</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1a9fe135c0e016f19608d9887049dad701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::aistx::Build_Frame_impl::byte_packing</definition>
+        <argsstring>(char *input_frame, unsigned char *out_byte, unsigned int len)</argsstring>
+        <name>byte_packing</name>
+        <param>
+          <type>char *</type>
+          <declname>input_frame</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>out_byte</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1aistx_1_1Build__Frame__impl_1a702b10cc7a414962547072ed7c2e73e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::aistx::Build_Frame_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="5">
+        <label>gr::aistx::Build_Frame_impl</label>
+        <link refid="classgr_1_1aistx_1_1Build__Frame__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gr::aistx::Build_Frame</label>
+        <link refid="classgr_1_1aistx_1_1Build__Frame"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="8">
+        <label>gr::aistx::Build_Frame_impl</label>
+        <link refid="classgr_1_1aistx_1_1Build__Frame__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gr::aistx::Build_Frame</label>
+        <link refid="classgr_1_1aistx_1_1Build__Frame"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" line="32" column="1" bodyfile="/Users/germanocapela/src/ais/gr-aistx/lib/Build_Frame_impl.h" bodystart="31" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1ad10991eaf9af93213811ec9a204e4dd1" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>Build_Frame_impl</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a9fe135c0e016f19608d9887049dad701" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>byte_packing</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a08e748e33e762958ec4c85483efbd4db" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>compute_crc</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a659fa63b024f19504015514d34d26f0e" prot="private" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>d_enable_NRZI</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1afd6d3c9845d01e8fbd5600a150e0cde1" prot="private" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>d_repeat</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a6460e0ac01209f539719dc8ac23d7b85" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>dump_buffer</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a03d7206b7c8a8cb7392c0b3919ba11c1" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>int2bin</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a119c01ddf5ab7493667b8e4684388725" prot="private" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>LEN_PAYLOAD</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a2cdfc9cd7a373d8dcbd1528c6564e199" prot="private" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>LEN_SENTENCE</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame_1aa7e2f38af84627dd639e01d0100669de" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1aee6cd487dd7d5160d761e8de101072a8" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>nrz_to_nrzi</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a9f1fb49069f3564e4e48cbfbf59e6b1c" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>pack</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1af7c943d1af8acecaaea2526962a6d976" prot="private" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>payload</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a7cb5a908822c0a7298cc86ca738d2688" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>reverse_bit_order</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame_1a5ebb7c3caaff00cd0cb5d8be7f976be0" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1ae3b8521f2b147735d4ad476a41197576" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>stuff</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1aa73a960771508f41940a494df2a15fb1" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>unpack</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a702b10cc7a414962547072ed7c2e73e6" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1af2af7ecdd2cf9a761f1f6cf6bfb3c237" prot="public" virt="non-virtual"><scope>gr::aistx::Build_Frame_impl</scope><name>~Build_Frame_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

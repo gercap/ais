@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="classgr_1_1aistx_1_1Build__Frame" kind="class"><name>gr::aistx::Build_Frame</name>
+    <member refid="classgr_1_1aistx_1_1Build__Frame_1a5ebb7c3caaff00cd0cb5d8be7f976be0" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame_1aa7e2f38af84627dd639e01d0100669de" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1aistx_1_1Build__Frame__impl" kind="class"><name>gr::aistx::Build_Frame_impl</name>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1afd6d3c9845d01e8fbd5600a150e0cde1" kind="variable"><name>d_repeat</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a659fa63b024f19504015514d34d26f0e" kind="variable"><name>d_enable_NRZI</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1af7c943d1af8acecaaea2526962a6d976" kind="variable"><name>payload</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a2cdfc9cd7a373d8dcbd1528c6564e199" kind="variable"><name>LEN_SENTENCE</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a119c01ddf5ab7493667b8e4684388725" kind="variable"><name>LEN_PAYLOAD</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1ad10991eaf9af93213811ec9a204e4dd1" kind="function"><name>Build_Frame_impl</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1af2af7ecdd2cf9a761f1f6cf6bfb3c237" kind="function"><name>~Build_Frame_impl</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a6460e0ac01209f539719dc8ac23d7b85" kind="function"><name>dump_buffer</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a03d7206b7c8a8cb7392c0b3919ba11c1" kind="function"><name>int2bin</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1ae3b8521f2b147735d4ad476a41197576" kind="function"><name>stuff</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a9f1fb49069f3564e4e48cbfbf59e6b1c" kind="function"><name>pack</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1aee6cd487dd7d5160d761e8de101072a8" kind="function"><name>nrz_to_nrzi</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a7cb5a908822c0a7298cc86ca738d2688" kind="function"><name>reverse_bit_order</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1aa73a960771508f41940a494df2a15fb1" kind="function"><name>unpack</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a08e748e33e762958ec4c85483efbd4db" kind="function"><name>compute_crc</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a9fe135c0e016f19608d9887049dad701" kind="function"><name>byte_packing</name></member>
+    <member refid="classgr_1_1aistx_1_1Build__Frame__impl_1a702b10cc7a414962547072ed7c2e73e6" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1aistx" kind="namespace"><name>gr::aistx</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a673964c4e0fbad19577510275e025742" kind="define"><name>AISTX_API</name></member>
+  </compound>
+  <compound refid="Build__Frame_8h" kind="file"><name>Build_Frame.h</name>
+  </compound>
+  <compound refid="Build__Frame__impl_8h" kind="file"><name>Build_Frame_impl.h</name>
+    <member refid="Build__Frame__impl_8h_1a34805064c320a4a6d7fd3576a417b5c6" kind="define"><name>__VERSION</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_0394f96c439d47acaf61ef0360aaa540" kind="dir"><name>aistx</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /* 
- * Copyright 2013 <+YOU OR YOUR COMPANY+>.
+ * Copyright 2018.
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,15 +22,15 @@
 #ifndef INCLUDED_AISTX_BUILD_FRAME_H
 #define INCLUDED_AISTX_BUILD_FRAME_H
 
-#include <AISTX/api.h>
+#include <aistx/api.h>
 #include <gnuradio/sync_block.h>
 
 namespace gr {
-  namespace AISTX {
+  namespace aistx {
 
     /*!
-     * \brief Builds AIS Frame
-     * \ingroup AISTX
+     * \brief <+description of block+>
+     * \ingroup aistx
      *
      */
     class AISTX_API Build_Frame : virtual public gr::sync_block
@@ -53,7 +53,7 @@ namespace gr {
       static sptr make(const char *sentence, bool repeat, bool enable_NRZI);
     };
 
-  } // namespace AISTX
+  } // namespace aistx
 } // namespace gr
 
 #endif /* INCLUDED_AISTX_BUILD_FRAME_H */
