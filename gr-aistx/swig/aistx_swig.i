@@ -11,7 +11,5 @@
 #include "aistx/Build_Frame.h"
 %}
 
-
 %include "aistx/Build_Frame.h"
 GR_SWIG_BLOCK_MAGIC2(aistx, Build_Frame);
-
