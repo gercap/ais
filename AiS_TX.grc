@@ -198,6 +198,57 @@
     </param>
   </block>
   <block>
+    <key>ais_receive</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>designator</key>
+      <value>"A"</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>freq</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(664, 72)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ais_receive_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>rate</key>
+      <value>samp_rate</value>
+    </param>
+  </block>
+  <block>
     <key>aistx_Build_Frame</key>
     <param>
       <key>alias</key>
@@ -221,7 +272,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(0, 168)</value>
+      <value>(0, 200)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -394,7 +445,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1008, 200)</value>
+      <value>(984, 168)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -457,7 +508,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(803, 212)</value>
+      <value>(800, 240)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -486,6 +537,37 @@
     <param>
       <key>vlen</key>
       <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_message_debug</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(880, 120)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_message_debug_0</value>
     </param>
   </block>
   <block>
@@ -563,7 +645,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(605, 301)</value>
+      <value>(624, 300)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -795,6 +877,65 @@
     </param>
   </block>
   <block>
+    <key>blocks_socket_pdu</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(856, 24)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>host</key>
+      <value>127.0.0.1</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_socket_pdu_0</value>
+    </param>
+    <param>
+      <key>mtu</key>
+      <value>10000</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>port</key>
+      <value>52001</value>
+    </param>
+    <param>
+      <key>tcp_no_delay</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>"TCP_SERVER"</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_throttle</key>
     <param>
       <key>alias</key>
@@ -814,7 +955,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(880, 52)</value>
+      <value>(1064, 76)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2117,6 +2258,18 @@
     </param>
   </block>
   <connection>
+    <source_block_id>ais_receive_0</source_block_id>
+    <sink_block_id>blocks_message_debug_0</sink_block_id>
+    <source_key>msgs</source_key>
+    <sink_key>print</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ais_receive_0</source_block_id>
+    <sink_block_id>blocks_socket_pdu_0</sink_block_id>
+    <source_key>msgs</source_key>
+    <sink_key>pdus</sink_key>
+  </connection>
+  <connection>
     <source_block_id>aistx_Build_Frame_0</source_block_id>
     <sink_block_id>digital_gmsk_mod_0</sink_block_id>
     <source_key>0</source_key>
@@ -2209,6 +2362,12 @@
   <connection>
     <source_block_id>blocks_throttle_0</source_block_id>
     <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_gmsk_mod_0</source_block_id>
+    <sink_block_id>ais_receive_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
