@@ -101,11 +101,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(304, 228)</value>
+      <value>(336, 216)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -196,7 +196,7 @@
     </param>
     <param>
       <key>value</key>
-      <value></value>
+      <value>010010000011101011110111001110011000100000000000000000100000001011001000001011000101000110100010010100001101011001111011000011111111111011100101110011100000000000000110</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -290,7 +290,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
