@@ -40,7 +40,13 @@
     <key>False</key>
   </option>
   </param>  
-  
+
+  <sink>
+    <name>msg pdu</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+
   <source>
     <name>out</name>
     <type>byte</type>

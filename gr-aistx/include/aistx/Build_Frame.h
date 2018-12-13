@@ -53,6 +53,8 @@ namespace gr {
       static sptr make(const char *sentence, bool repeat, bool enable_NRZI);
       /*change sentence on runtime*/
       virtual void set_sentence(const char *sentence) = 0;
+
+      virtual void get_msg(pmt::pmt_t) = 0;
     };
 
   } // namespace aistx

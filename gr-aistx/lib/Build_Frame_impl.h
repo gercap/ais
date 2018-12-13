@@ -22,6 +22,7 @@
 #define INCLUDED_AISTX_BUILD_FRAME_IMPL_H
 
 #include <aistx/Build_Frame.h>
+#include <pmt/pmt.h>
 
 #define __VERSION 0.3
 
@@ -42,7 +43,9 @@ namespace gr {
         Build_Frame_impl(const char *sentence, bool repeat, bool enable_NRZI);
         ~Build_Frame_impl();
 
+    void get_msg(pmt::pmt_t msg);
     void set_sentence(const char *sentence);
+    
     void dump_buffer(const char *b, int buffer_size);
     char * int2bin(int a, char *buffer, int buf_size);      
     int stuff (const char *in, char *out, int l_in);

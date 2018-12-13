@@ -59,49 +59,13 @@ namespace gr {
           d_repeat(repeat),
           d_enable_NRZI(enable_NRZI)
     {
-      unsigned short REMAINDER_TO_EIGHT, PADDING_TO_EIGHT;  // to pad the payload to a multiple of 8
+
+      message_port_register_in(pmt::mp("msg pdu"));
+      set_msg_handler(pmt::mp("msg pdu"), boost::bind(&Build_Frame_impl::get_msg, this, _1));
       
       payload = (char *) malloc(4096);
 
-      LEN_PAYLOAD = strlen(sentence);
-      if (LEN_PAYLOAD>168)
-        printf ("Frame padding disabled. Multiple packets.\n");
-
-      // IMPORTANT
-      REMAINDER_TO_EIGHT = LEN_PAYLOAD%8;
-      if (REMAINDER_TO_EIGHT==0) {
-        //payload = (char *) malloc(LEN_PAYLOAD + LEN_CRC);
-        // nb. It comes in in ASCII
-        for (int i=0; i<LEN_PAYLOAD; i++)
-          payload[i]=sentence[i]-48;  
-      }
-      else if (REMAINDER_TO_EIGHT>0){
-
-        PADDING_TO_EIGHT = 8-REMAINDER_TO_EIGHT;    
-        //payload = (char *) malloc(LEN_PAYLOAD + PADDING_TO_EIGHT + LEN_CRC);
-
-        for (int i=0; i<LEN_PAYLOAD; i++)
-          payload[i]=sentence[i]-48;    
-
-        printf ("Detected a payload which is *not* multiple of 8 (%d bits). Padding with %d bits to %d\n", LEN_PAYLOAD, PADDING_TO_EIGHT, LEN_PAYLOAD + PADDING_TO_EIGHT);
-
-        memset (payload + LEN_PAYLOAD, 0x0, PADDING_TO_EIGHT);
-        
-        LEN_PAYLOAD += PADDING_TO_EIGHT;  // update PAYLOAD LENGHT
-      }
-
-      //dump_buffer(payload, LEN_PAYLOAD);
-
-      // crc 
-      char crc[16]; // 2 gnuradio bytes of CRC    
-      char input_crc[LEN_PAYLOAD];
-      memcpy (input_crc, payload, LEN_PAYLOAD);
-      compute_crc (input_crc, crc, LEN_PAYLOAD);  
-      memcpy (payload+LEN_PAYLOAD, crc, LEN_CRC);
-
-      // reverse
-      reverse_bit_order (payload, LEN_PAYLOAD+LEN_CRC);
-
+      set_sentence(sentence);
     }
 
     /*
@@ -111,30 +75,52 @@ namespace gr {
     {
     }
 
+    void Build_Frame_impl::get_msg(pmt::pmt_t msg) {
+        //set_sentence from received PDU
+        char *_sentence = (char *) pmt::blob_data(pmt::cdr(msg));
+        if (strlen(_sentence) > 1) {
+
+          //std::cout << _sentence << std::endl;
+          //check where \n char is
+          int _sentence_lim = 0;
+          for (_sentence_lim = 0; _sentence_lim < strlen(_sentence); _sentence_lim++)
+            if (_sentence[_sentence_lim] == '\n') {
+              //printf ("Newline at position %d\n", _sentence_lim);
+              break;
+            }
+          //define the limit of the char array where the \n was
+          _sentence[_sentence_lim] = '\0';
+
+          //std::cout << _sentence << std::endl;
+          //unsigned short _len = strlen(_sentence);
+          //printf ("Detected PDU with %d bits\n", _len);
+          
+          set_sentence(_sentence);
+        }
+    }
+
     void Build_Frame_impl::set_sentence(const char *sentence)
     {   
       unsigned short REMAINDER_TO_EIGHT, PADDING_TO_EIGHT;
       LEN_PAYLOAD = strlen(sentence);
         REMAINDER_TO_EIGHT = LEN_PAYLOAD%8;
       if (REMAINDER_TO_EIGHT==0) {
-        //payload = (char *) malloc(LEN_PAYLOAD + LEN_CRC);
         // nb. It comes in in ASCII
         for (int i=0; i<LEN_PAYLOAD; i++)
-          payload[i]=sentence[i]-48;  
+          payload[i]=sentence[i]-48;
+
+        printf("No padding needed!\n");
       }
       else if (REMAINDER_TO_EIGHT>0){
 
         PADDING_TO_EIGHT = 8-REMAINDER_TO_EIGHT;    
-        //payload = (char *) malloc(LEN_PAYLOAD + PADDING_TO_EIGHT + LEN_CRC);
-
         for (int i=0; i<LEN_PAYLOAD; i++)
           payload[i]=sentence[i]-48;    
 
         printf ("Detected a payload which is *not* multiple of 8 (%d bits). Padding with %d bits to %d\n", LEN_PAYLOAD, PADDING_TO_EIGHT, LEN_PAYLOAD + PADDING_TO_EIGHT);
-
         memset (payload + LEN_PAYLOAD, 0x0, PADDING_TO_EIGHT);
-        
         LEN_PAYLOAD += PADDING_TO_EIGHT;
+      }
 
       char crc[16]; // 2 gnuradio bytes of CRC    
       char input_crc[LEN_PAYLOAD];
@@ -146,7 +132,8 @@ namespace gr {
       reverse_bit_order (payload, LEN_PAYLOAD+LEN_CRC);
 
       printf("sentence changed!\n");
-    }
+      printf ("Payload of length (%d bits) and REMAINDER_TO_EIGHT %d\n", LEN_PAYLOAD, REMAINDER_TO_EIGHT);
+
   }
 
   void Build_Frame_impl::dump_buffer(const char *b, int buffer_size)
